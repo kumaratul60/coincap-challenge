@@ -12,7 +12,7 @@ import "../Styles/Table.css";
 const CryptoTable = () => {
   const [apiData, setApiData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(30);
+  const [postPerPage, setPostPerPage] = useState(50);
 
   useEffect(() => {
     apiCall();
