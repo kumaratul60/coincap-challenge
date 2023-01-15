@@ -144,7 +144,7 @@ const CryptoTable = () => {
                   { parseInt(e.volumeUsd24Hr).toFixed(2) }
                 </TableCell>
                 <TableCell align="right">
-                  { parseInt(e.changePercent24Hr) <= 0 ? (
+                  { parseInt(e.changePercent24Hr) < 0 ? (
                     <div style={ { color: "red" } }>
                       { parseInt(e.changePercent24Hr).toFixed(2) }%
                     </div>
